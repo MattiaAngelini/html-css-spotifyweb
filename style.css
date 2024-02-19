@@ -89,6 +89,12 @@ body {
     display: none;
 }
 
+
+.fixed {
+    position: fixed;
+    right: 0;
+}
+
 /*------------------------------
     FONTS/COLORS - UTILITIES
 -------------------------------*/
@@ -182,8 +188,8 @@ body {
 }
 
 
-.background_lightblue {
-    background-color:#0084fd;
+.background_darkblue {
+    background-color:#080b12
 }
 
 .background_grey {
@@ -350,6 +356,10 @@ body {
     gap:50px;
 }
 
+.border_2px {
+    border: 2px solid white;
+}
+
 .border_rad_10 {
     border-radius: 10px;
 }
@@ -379,6 +389,10 @@ body {
     height: 50%;
 }
 
+.height_10 {
+    height: 10%;
+}
+
 .width_100 {
     width: 100%;
 }
@@ -397,6 +411,14 @@ body {
 
 .width_30 {
     width: 30%;
+}
+
+.width_20 {
+    width: 20%;
+}
+
+.min_width_100 {
+    min-width: 100%;
 }
 
 .max_width_20 {
@@ -473,18 +495,24 @@ body {
 
 header { 
     min-width: 200px;
-    height: 90vh;
+    height: calc(100vh - 80px);
     position: sticky;
     top: 0;
     left: 0;
     padding: 20px;
+    z-index: 1000;
+}
+
+main {
+     width: 100vw;
 }
 
 footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 10vh;
+    height: 80px;
+    
 }
    
 /*-------------------
