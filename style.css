@@ -438,19 +438,25 @@ body {
     padding: 20px;
 }
 
-/*-------------------
-      HEADER
--------------------*/
+/*---------------------
+ HEDEAR - MAIN - FOOTER
+---------------------*/
 
 header {
-    width: 20%;
-    position: fixed;
+    max-width: 20%;
     height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 main {
     width: calc(100vw - 20%);
     margin-left: auto; 
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
 }
 
 /*-------------------
