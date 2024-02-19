@@ -53,6 +53,10 @@ body {
     justify-content: center;
 }
 
+.jstfy_content_end {
+    justify-content: end;
+}
+
 .align_end{
     align-items: end; 
 }
@@ -165,8 +169,8 @@ body {
     background-color:#0084fd;
 }
 
-.background_purple {
-    background-color: #9792e4;
+.background_grey {
+    background-color: #a3a3a3;
 }
 
 .background_sky {
@@ -443,22 +447,25 @@ body {
 ---------------------*/
 
 header {
-    max-width: 20%;
+    max-width: 20%; 
     height: 100vh;
     position: sticky;
     top: 0;
+    left: 0;
+    padding: 20px;
 }
 
 main {
-    width: calc(100vw - 20%);
-    margin-left: auto; 
+    height: calc(100% - 20%);
+    max-width: calc(100% - 20%);
 }
-
+      
 footer {
-    position: sticky;
+    width: 100%;
+    position: fixed;
     bottom: 0;
 }
-
+   
 /*-------------------
     MEDIA QUERIES
 -------------------*/
