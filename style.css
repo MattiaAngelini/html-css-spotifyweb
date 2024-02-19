@@ -93,6 +93,10 @@ body {
     text-align: center;
 }
 
+.vertical_text_center {
+    vertical-align: middle;
+}
+
 .text_start {
     text-align: start;
 }
@@ -103,6 +107,10 @@ body {
 
 .line_height_40 {
     line-height: 40px;
+}
+
+.font_sz_12 {
+    font-size: 12px;
 }
 
 .font_sz_20 {
@@ -164,6 +172,11 @@ body {
 .color_senape {
     color: #fdc15f;
 }
+
+.color_grey {
+    color: #a3a3a3;
+}
+
 
 .background_lightblue {
     background-color:#0084fd;
@@ -241,16 +254,20 @@ body {
     padding-right: 50px;
 }
 
+.margin_auto {
+    margin: auto;
+}
+
+.marg_top_auto {
+    margin-top: auto;
+}
+
 .marg_20 {
     margin: 20px;
 }
 
 .marg_100 {
     margin: 100px;
-}
-
-.marg_top_auto {
-    margin-top: auto;
 }
 
 .marg_top_20 {
@@ -271,6 +288,10 @@ body {
 
 .marg_top_200 {
     margin-top: 200px;
+}
+
+.marg_bot_10 {
+    margin-bottom: 10px;
 }
 
 .marg_bot_20 {
@@ -314,7 +335,7 @@ body {
 }
 
 .gap_10 {
-    gap: 20px;
+    gap: 10px;
 }
 
 .gap_20 {
@@ -420,10 +441,10 @@ body {
     width: 80%;
 }
 
-.margin_auto {
-    margin: auto;
+.square {
+    width: 30px;
+    height: 30px;
 }
-
 /*-------------------
        BUTTONS
 -------------------*/
@@ -446,24 +467,20 @@ body {
  HEDEAR - MAIN - FOOTER
 ---------------------*/
 
-header {
-    max-width: 20%; 
-    height: 100vh;
+header { 
+    height: 90vh;
     position: sticky;
     top: 0;
     left: 0;
     padding: 20px;
 }
 
-main {
-    height: calc(100% - 20%);
-    max-width: calc(100% - 20%);
-}
       
 footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+    height: 10vh;
 }
    
 /*-------------------
