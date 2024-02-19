@@ -468,14 +468,14 @@ body {
 ---------------------*/
 
 header { 
+    min-width: 200px;
     height: 90vh;
     position: sticky;
     top: 0;
     left: 0;
     padding: 20px;
 }
-
-      
+     
 footer {
     width: 100%;
     position: fixed;
