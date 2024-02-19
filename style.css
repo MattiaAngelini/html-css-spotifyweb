@@ -178,7 +178,7 @@ body {
 }
 
 .background_black {
-    background-color: #333333;
+    background-color: black;
 }
 
 /*------------------------------
@@ -244,6 +244,11 @@ body {
 .marg_100 {
     margin: 100px;
 }
+
+.marg_top_auto {
+    margin-top: auto;
+}
+
 .marg_top_20 {
     margin-top: 20px;
 }
@@ -436,6 +441,17 @@ body {
 /*-------------------
       HEADER
 -------------------*/
+
+header {
+    width: 20%;
+    position: fixed;
+    height: 100vh;
+}
+
+main {
+    width: calc(100vw - 20%);
+    margin-left: auto; 
+}
 
 /*-------------------
     MEDIA QUERIES
