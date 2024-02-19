@@ -85,6 +85,10 @@ body {
     clip-path: circle();
 }
 
+.display_none {
+    display: none;
+}
+
 /*------------------------------
     FONTS/COLORS - UTILITIES
 -------------------------------*/
@@ -475,7 +479,7 @@ header {
     left: 0;
     padding: 20px;
 }
-     
+
 footer {
     width: 100%;
     position: fixed;
@@ -497,5 +501,22 @@ footer {
 
 
 @media screen and (max-width: 600px) {
-}
+
+    header {
+        min-width: 60px;
+    }
+  
+    header .nav, .install {
+        display: none;
+    }
+    header .display_none {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+    }
+
+
+
 
