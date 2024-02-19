@@ -490,7 +490,8 @@ body {
 }
 
 /*---------------------
- HEDEAR - MAIN - FOOTER
+        LAYOUT
+ HEADEAR - MAIN - FOOTER
 ---------------------*/
 
 header { 
@@ -504,7 +505,13 @@ header {
 }
 
 main {
-     width: 100vw;
+     width: 100vw;   
+}
+
+main .upgrade {
+    max-height: 80px;
+    position: sticky;
+    top: 0;
 }
 
 footer {
@@ -512,7 +519,6 @@ footer {
     position: fixed;
     bottom: 0;
     height: 80px;
-    
 }
    
 /*-------------------
@@ -544,7 +550,3 @@ footer {
         justify-content: space-between;
     }
     }
-
-
-
-
