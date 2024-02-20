@@ -378,7 +378,7 @@ body {
 }
 
 .border_2px {
-    border: 2px solid white;
+    border: 2px solid #a3a3a3;
 }
 
 .border_rad_10 {
@@ -555,7 +555,9 @@ header .square:hover {
     background-color: white;
 }
 
-
+.upgrade div:hover {
+    font-size: 17px;
+}
 
 
 
@@ -579,17 +581,16 @@ header {
     height: calc(100vh - 90px); 
     top: 0;
     flex-shrink: 0; 
-   
-}
-
-header .playlist {    
-    height: calc(100vh - 80px);     
 }
 
 main  {     
       height: calc(100vh - 90px);
       flex-grow: 1;
       flex-shrink: 1;
+}
+
+main .upgrade {
+    height: 70px;
 }
 
 footer {  
