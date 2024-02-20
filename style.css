@@ -293,6 +293,10 @@ body {
     margin-top: 50px;
 }
 
+.marg_top_80 {
+    margin-top: 80px;
+}
+
 .marg_top_100 {
     margin-top: 100px;
 }
@@ -509,15 +513,23 @@ body {
 
 header { 
     width: 200px;
-    height: calc(100vh - 80px);
-    position: sticky;
+    height: calc(100vh - 80px); 
     top: 0;
     flex-shrink: 0; 
+    overflow-y: scroll;
 }
 
-main .upgrade {
+header .playlist {    
+    height: calc(100vh - 80px); 
+    
+}
+
+main  {
+      
+      height: calc(100vh - 80px);
       flex-grow: 1;
       overflow-y: auto;
+      flex-shrink: 1;
 }
 
 footer {  
@@ -542,9 +554,8 @@ footer {
 }
 
 
-
 @media screen and (max-width: 600px) {
-
+    
     header {
         max-width: 60px;
     }
@@ -552,9 +563,13 @@ footer {
     header .nav, .install {
         display: none;
     }
+
     header .display_none {
         display: flex;
-        flex-direction: column;     
-        justify-content: space-between;
+        flex-direction: column;    
+    }
+
+    #overflow_mobile {
+        overflow-y: hidden;
     }
     }
