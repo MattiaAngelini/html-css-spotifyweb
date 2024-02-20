@@ -45,6 +45,10 @@ body {
     flex-direction: column;
 }
 
+.row_direct {
+    flex-direction: row;
+}
+
 .jstfy_content_start  {
     justify-content: start;
 }
@@ -557,7 +561,7 @@ footer {
         max-width: 60px;
     }
   
-    header .nav, .install {
+    header .playlist, .install {
         display: none;
     }
 
