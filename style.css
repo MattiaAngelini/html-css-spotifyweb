@@ -444,6 +444,10 @@ body {
     margin: auto;
 }
 
+.col_16 {
+    width: calc(100% / 6);
+}
+
 .col_20 {
     width: 20%;
 }
