@@ -541,6 +541,34 @@ body {
     width: 30%;
 }
 
+/*-------------------
+       HOVER
+-------------------*/
+
+header ul li:hover,
+header h4:hover,
+header h5:hover {
+    color: white;
+}
+
+header .square:hover {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------
         LAYOUT
  HEADEAR - MAIN - FOOTER
