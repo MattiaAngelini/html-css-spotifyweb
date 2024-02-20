@@ -1,3 +1,4 @@
+
 /*-------------------
        RESET
 -------------------*/
@@ -13,10 +14,13 @@ ul {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  
 }
 
 /*-------------------
@@ -32,7 +36,7 @@ body {
 }
 
 .flex {
-    display: flex;
+    display:flex
 }
 
 .wrap {
@@ -47,11 +51,11 @@ body {
     flex-direction: row;
 }
 
-.jstfy_content_start {
+.jstfy_content_start  {
     justify-content: start;
 }
 
-.jstfy_content_cntr {
+.jstfy_content_cntr  {
     justify-content: center;
 }
 
@@ -59,8 +63,8 @@ body {
     justify-content: end;
 }
 
-.align_end {
-    align-items: end;
+.align_end{
+    align-items: end; 
 }
 
 .align_center {
@@ -94,6 +98,10 @@ body {
 .fixed {
     position: fixed;
     right: 0;
+}
+
+.overflow_y_auto {
+    overflow-y: auto;
 }
 
 /*------------------------------
@@ -165,11 +173,11 @@ body {
 }
 
 .color_lightblue {
-    color: #0084fd;
+    color:#0084fd;
 }
 
 .color_blue_link {
-    color: #9792e4;
+    color:#9792e4;
 }
 
 .color_purple {
@@ -189,7 +197,7 @@ body {
 }
 
 .background_darkblue {
-    background-color: #080b12;
+    background-color:#080b12
 }
 
 .background_grey {
@@ -199,6 +207,7 @@ body {
 .background_dark_grey {
     background-color: #282828;
 }
+
 
 .background_blue_night {
     background-color: #141922;
@@ -228,11 +237,11 @@ body {
     padding: 20px;
 }
 
-.pad_50 {
+.pad_50{
     padding: 50px;
 }
 
-.pad_100 {
+.pad_100{
     padding: 100px;
 }
 
@@ -329,15 +338,15 @@ body {
 }
 
 .marg_left_20 {
-    margin-left: 20px;
+    margin-left:20px;
 }
 
 .marg_left_50 {
-    margin-left: 50px;
+    margin-left:50px;
 }
 
 .marg_left_200 {
-    margin-left: 200px;
+    margin-left:200px;
 }
 
 .marg_right_10 {
@@ -361,11 +370,11 @@ body {
 }
 
 .gap_20 {
-    gap: 20px;
+    gap:20px;
 }
 
 .gap_50 {
-    gap: 50px;
+    gap:50px;
 }
 
 .border_2px {
@@ -498,7 +507,6 @@ body {
     width: 30px;
     height: 30px;
 }
-
 /*-------------------
        BUTTONS
 -------------------*/
@@ -506,14 +514,14 @@ body {
 .btn_standard {
     border-radius: 30px;
     margin: 20px 0;
-    border: none;
+    border: none; 
     padding: 10px;
 }
 
 .btn_big {
     border-radius: 30px;
     margin: 20px 0;
-    border: none;
+    border: none; 
     padding: 20px;
 }
 
@@ -538,74 +546,70 @@ body {
  HEADEAR - MAIN - FOOTER
 ---------------------*/
 
-header {
+header { 
     width: 200px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 90px); 
     top: 0;
-    flex-shrink: 0;
-    overflow-y: auto;
+    flex-shrink: 0; 
+   
 }
 
-header .playlist {
-    height: calc(100vh - 80px);
+header .playlist {    
+    height: calc(100vh - 80px);     
 }
 
-main {
-    height: calc(100vh - 90px);
-    flex-grow: 1;
-    overflow-y: auto;
-    flex-shrink: 1;
+main  {     
+      height: calc(100vh - 90px);
+      flex-grow: 1;
+      flex-shrink: 1;
 }
 
-footer {
-    height: 90px;
+footer {  
+    height: 90px;   
 }
-
+   
 /*-------------------
     MEDIA QUERIES
 -------------------*/
-
 @media screen and (max-width: 1100px) {
     .played .col_16 {
         width: 25%;
     }
-
     .Jhon_Doe .col_16 {
         width: 25%;
     }
-
     .populars .col_16 {
         width: 25%;
     }
 }
 
 @media screen and (max-width: 700px) {
+
     .played .col_16 {
         width: 50%;
     }
-
     .Jhon_Doe .col_16 {
         width: 50%;
     }
-
+    
     .populars .col_16 {
         width: 50%;
     }
+  
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {  
     header {
         max-width: 60px;
     }
-
-    header .playlist,
-    .install {
+  
+    header .playlist, .install {
         display: none;
     }
 
     header .display_none {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;    
     }
 
     #overflow_mobile {
