@@ -550,6 +550,9 @@ footer {
     .Jhon_Doe .col_16 {
         width: 25%;
     }
+    .populars .col_16 {
+        width: 25%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -558,6 +561,10 @@ footer {
         width: 50%;
     }
     .Jhon_Doe .col_16 {
+        width: 50%;
+    }
+    
+    .populars .col_16 {
         width: 50%;
     }
   
