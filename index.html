@@ -221,40 +221,57 @@
 
     <footer class="flex space_between background_dark_grey color_white">
 
-        <section class="song">
-            <figure></figure>
-
-            <span>   
+       <!--LEFT FOOTER/SONG -->
+        <section class="song_card col_20 flex jstfy_content_cntr pad_10">
+            
+            <img class="" src="./img/sinister.jpeg"> 
+            <span class="pad_10">   
                 <h5>Sinistar</h5>
                 <h6>Brano nome</h6>
             </span>
             
-            <i>X</i>
-            <i>X</i>
+            <i class="fa-regular fa-heart pad_10"></i>
+            <i class="far fa-folder pad_10"></i>
+            
         </section>
 
-        <section class="play">     
-            <div>
-                <i>X</i>
-                <i>X</i>
-                <i>X</i>
-                <i>X</i>
-                <i>X</i>
+        <!--MIDDLE FOOTER/PLAY -->
+        <section class="play col_30">
+
+            <div class="flex column pad_20">     
+                <div class="flex jstfy_content_cntr gap_10">
+                    <i class="fa-solid fa-shuffle"></i>               
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>              
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+            </div>
+            
+        <!--RIGHT FOOTER/PLAY -->   
+            <div class="flex space_between">
+               
+                <div class=""> 0:25</div>                           
+                    <div class="volume width_100 flex pad_6"> 
+                        <div class="soundbar_white"></div>
+                        <div class="soundbar_grey"></div>
+                    </div>                         
+                <div class="">4:35</div>
+        
             </div>
 
-            <div>
-                <span>0:25</span>
-                <span>----------</span>
-                <span>4:35</span>
-            </div>
         </section>
+ 
 
-        <section class="volume">
-            <i>X</i>
-            <i>X</i>
-            <i>X</i>
-            <span>-----</span>
-            <i>X</i>
+        <section class="settings flex col_20 pad_20 jstfy_content_cntr">
+            <i class="fa-solid fa-list pad_6"></i>
+            <i class="fas fa-desktop pad_6"></i>
+            <i class="fas fa-volume-up pad_6"></i>
+           
+            <div class="volume width_50 flex pad_10"> 
+                <div class="soundbar_white"></div>
+                <div class="soundbar_grey"></div>
+            </div>
         </section>
 
     </footer>

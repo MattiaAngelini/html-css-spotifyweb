@@ -221,6 +221,10 @@ body {
       LAYOUT - UTILITIES
 --------------------------------*/
 
+.pad_6 {
+    padding: 6px;
+}
+
 .pad_10 {
     padding: 10px;
 }
@@ -402,6 +406,10 @@ body {
     height: 50%;
 }
 
+.height_30 {
+    height: 30%;
+}
+
 .height_10 {
     height: 10%;
 }
@@ -476,6 +484,11 @@ body {
     width: 50%;
 }
 
+
+.col_60 {
+    width: 60%;
+}
+
 .col_66 {
     width: calc(100% - (100% / 3));
 }
@@ -510,6 +523,25 @@ body {
     padding: 20px;
 }
 
+
+/*-------------------
+      SOUNDBARS
+-------------------*/
+
+.soundbar_white {
+    height: 3px;
+    background-color: white;
+    width: 70%;
+}
+
+.soundbar_grey {
+    height: 3px;
+    background-color: grey;
+    width: 30%;
+}
+
+
+
 /*---------------------
         LAYOUT
  HEADEAR - MAIN - FOOTER
@@ -517,7 +549,7 @@ body {
 
 header { 
     width: 200px;
-    height: calc(100vh - 80px); 
+    height: calc(100vh - 90px); 
     top: 0;
     flex-shrink: 0; 
     overflow-y: auto;
@@ -529,14 +561,14 @@ header .playlist {
 }
 
 main  {     
-      height: calc(100vh - 80px);
+      height: calc(100vh - 90px);
       flex-grow: 1;
       overflow-y: auto;
       flex-shrink: 1;
 }
 
 footer {  
-    height: 80px;   
+    height: 90px;   
    
 }
    
