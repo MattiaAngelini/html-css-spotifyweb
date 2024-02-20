@@ -196,8 +196,13 @@ body {
     background-color: #a3a3a3;
 }
 
-.background_sky {
-    background-color: #b5ddff;
+.background_dark_grey {
+    background-color: #282828;
+}
+
+
+.background_blue_night {
+    background-color: #141922;
 }
 
 .background_white {
