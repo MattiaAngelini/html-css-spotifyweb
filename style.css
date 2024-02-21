@@ -559,13 +559,32 @@ header .square:hover {
     font-size: 17px;
 }
 
+.nav_main li:hover {
+    color: white;
+}
 
+.relative {
+    opacity: 1;
+}
 
+.absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
+.relative:hover .absolute {
+    opacity: 1;
+    
+}
 
-
-
-
+.relative:hover img {
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
 
 
 
@@ -591,10 +610,12 @@ main  {
 
 main .upgrade {
     height: 70px;
+    z-index: 900;
 }
 
 footer {  
     height: 90px;   
+    z-index: 1000;
 }
    
 /*-------------------
