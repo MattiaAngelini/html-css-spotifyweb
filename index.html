@@ -19,20 +19,32 @@
     <div class="flex">
 
 <!------------------------ HEADER SIDEBAR -------------------------->
-    <header id="overflow_mobile" class="flex column space_between overflow_y_auto background_black color_grey font_sz_12 pad_20">
+    <header id="overflow_mobile" class="flex column space_between overflow_y_auto background_black color_grey font_sz_12">
         
         <!------ NAV ------>
-        <section class="playlist flex column">
-            
-            <figure class="">
-                <img class="" src="./img/logo.svg" alt="">
+           
+            <figure class="marg_bot_10 pad_10">
+                <img class="width_80" src="./img/logo.svg" alt="">
             </figure>
+            
+            <div id="first" class="flex">
+                <div id="green_bar"></div>       
+                <i class="marg_right_10 fa-solid fa-house marg_left_16 marg_bot_10 color_white"></i> 
+                <h4 class="color_white">Home</h4>
+            </div>
+           
+            <section class="playlist flex column pad_20 pad_top_0">
+            
+            <div class="flex marg_bot_10">
+                <i class="marg_right_10 fas fa-search"></i>     
+                <h4>Crea</h4>
+            </div>
 
-            <ul class="marg_bot_20 marg_top_20">
-                <li class="flex marg_bot_10"><i class="marg_right_10 fa-solid fa-house"></i> <h4 class="color_white">Home</h4></li>
-                <li class="flex marg_bot_10"><i class="marg_right_10 fas fa-search"></i> <h4>Crea</h4></li>
-                <li class="flex marg_bot_10"><i class="marg_right_10 fa-solid fa-lines-leaning"></i> <h4>La tua libreria</h4></li>
-            </ul>
+            <div class="flex marg_bot_10">
+                <i class="marg_right_10 fa-solid fa-lines-leaning"></i>
+                <h4>La tua libreria</h4>
+            </div>
+           
             
             <!------ PLAY LIST ------>
             <h3 class="marg_bot_10 color_white">Playlist</h3>
@@ -83,29 +95,30 @@
                 </div>
             </section>
         </section>
-      
 
-        <!--MEDIA QUERY HEADER SMALL-->
-        <section class="display_none font_sz_18">
+        <!--MEDIA QUERY HEADER SMARTPHONE-->
+       
+        <div id="query_smartphone" class="display_none font_sz_18 marg_top_20">
 
             <div class="flex column space_between">
             
-                <div class="">
-                    <i class="fa-brands fa-spotify marg_bot_20 color_white"></i>
-                    <i class="marg_right_10 fa-solid fa-house marg_bot_20 color_white"></i>
-                    <i class="marg_right_10 fas fa-search marg_bot_20"></i> 
-                    <i class="marg_right_10 fa-solid fa-lines-leaning marg_bot_20"></i>
+                <div class="text_center">
+                    <i class="marg_right_10 fa-brands fa-spotify marg_bot_10 color_white"></i>
+                    <i class="marg_right_10 fa-solid fa-house marg_bot_10 color_white"></i>
+                    <i class="marg_right_10 fas fa-search marg_bot_10"></i> 
+                    <i class="marg_right_10 fa-solid fa-lines-leaning marg_bot_10"></i>
                 </div>
 
-                <div class="flex column align_center">
-                    <i class="marg_right_10 fa-solid fa-circle-arrow-down marg_bot_20 font_sz_12 "></i>
-                    <i class="marg_right_10 fa-solid fa-circle-user"></i>
+                <div class="text_center">
+                    <i class="marg_right_10 fa-solid fa-circle-arrow-down marg_bot_10 font_sz_12 "></i>
+                    <i class="marg_right_10 fa-solid fa-circle-user marg_bot_20"></i>
                 </div>
 
              </div>
-        </section>
+            </div>
+        </header>
  
-    </header>
+    
 
 <!--------------------- MAIN - RIGHT CONTENT ----------------------->
     <main class="background_blue_night overflow_y_auto"> 
@@ -118,12 +131,12 @@
         <!--MENU NAV MAIN-->
         <section class="nav_main marg_top_100">           
             <ul class="flex jstfy_content_cntr gap_10 wrap color_grey marg_bot_20">          
-                <li class="pad_10">IN EVIDENZA</li>
-                <li class="pad_10">PODCAST</li>
-                <li class="pad_10">CLASSIFICHE</li>
-                <li class="pad_10">GENERI E MOOD</li>
-                <li class="pad_10">NUOVE USCITE</li>
-                <li class="pad_10">SCOPRI</li>
+                <li class="pad_10 flex column">IN EVIDENZA  <div id="underline_green"></div></li>
+                <li class="pad_10">PODCAST <div id="underline_green"></div></li>
+                <li class="pad_10">CLASSIFICHE <div id="underline_green"></div></li>
+                <li class="pad_10">GENERI E MOOD <div id="underline_green"></div></li>
+                <li class="pad_10">NUOVE USCITE <div id="underline_green"></div></li>
+                <li class="pad_10">SCOPRI <div id="underline_green"></div></li>
             </ul>       
         </section>
 
@@ -132,9 +145,8 @@
             <h2 class="color_white marg_bot_20 marg_left_10">Recently played</h2>           
             <div class="played flex wrap color_white font_sz_12 text_center">
 
-
-                <div class="col_16 pad_10">
-                    
+                <!--ALBUMS-->
+                <div class="col_16 pad_10">                   
                     <div class="relative">
                         <img class="width_100" src="./img/heavymet.jpg" alt="">              
                         <div class="absolute">          
@@ -147,8 +159,7 @@
                 </div>
 
 
-                <div class="col_16 pad_10">
-                    
+                <div class="col_16 pad_10">                  
                     <div class="relative">
                         <img class="width_100" src="./img/stranger.jpeg" alt=""> 
                 
@@ -161,11 +172,10 @@
                     <div class="color_grey"> Kyle Dyxon </div>
                 </div>
 
-                <div class="col_16 pad_10">
-                    
+                <div class="col_16 pad_10">                 
                     <div class="relative">
                         <img class="width_100" src="./img/aquietplace.jpeg" alt=""> 
-                
+
                         <div class="absolute">          
                             <i class="a fa-regular fa-circle-play marg_left_10 marg_right_10 font_sz_30"></i> 
                         </div>
@@ -175,8 +185,7 @@
                     <div class="color_grey"> Subtitle </div>
                 </div>
 
-                <div class="col_16 pad_10">
-                    
+                <div class="col_16 pad_10">                   
                     <div class="relative">
                         <img class="width_100" src="./img/split.jpeg" alt=""> 
                 
@@ -189,8 +198,7 @@
                     <div class="color_grey"> Subtitle </div>
                 </div>
 
-                <div class="col_16 pad_10">
-                    
+                <div class="col_16 pad_10">                 
                     <div class="relative">
                         <img class="width_100" src="./img/cure.jpeg" alt=""> 
                 
@@ -203,8 +211,7 @@
                     <div class="color_grey"> Subtitle </div>
                 </div>
 
-                <div class="col_16 pad_10">
-                    
+                <div class="col_16 pad_10">                   
                     <div class="relative">
                         <img class="width_100" src="./img/sinister.jpeg" alt=""> 
                 
@@ -228,24 +235,18 @@
             <h5 class="color_grey marg_left_10">Più ascolti, più accurati saranno i suggerimenti.</h5>
             
             <div class="row flex color_white">                  
-                <div class="col_16 pad_10">
-                    
+                <div class="col_16 pad_10">              
                     <div class="relative">
-                        <img class="width_100" src="./img/radar.jpeg" alt=""> 
-                
+                        <img class="width_100" src="./img/radar.jpeg" alt="">            
                         <div class="absolute">          
                             <i class="a fa-regular fa-circle-play marg_left_10 marg_right_10 font_sz_30"></i> 
                         </div>
-                    </div>
-                
-                   
+                    </div>               
                 </div>
             
-                <div class="col_16 pad_10">
-                    
+                <div class="col_16 pad_10">                  
                     <div class="relative">
-                        <img class="width_100" src="./img/mixdaily.jpeg" alt=""> 
-                
+                        <img class="width_100" src="./img/mixdaily.jpeg" alt="">               
                         <div class="absolute">          
                             <i class="a fa-regular fa-circle-play marg_left_10 marg_right_10 font_sz_30"></i> 
                         </div>
@@ -261,8 +262,7 @@
 
         <section class="populars marg_bot_20">
             <h2 class="color_white marg_top_20 marg_bot_20 marg_left_10">Artisti più popolari</h2>
-            <h5 class="color_grey marg_left_10">Più ascolti, più accurati saranno i suggerimenti.</h5>
-            
+            <h5 class="color_grey marg_left_10">Più ascolti, più accurati saranno i suggerimenti.</h5>           
             <div class="row flex">                  
                 <figure class="col_16 pad_10">
                     <img class="width_100  circle_img" src="./img/youg.jpeg" alt="">
@@ -284,7 +284,6 @@
 
     <!-- LEFT FOOTER/SONG -->
     <section class="song_card col_20 flex jstfy_content_cntr pad_20">
-
         <img class="" src="./img/sinister.jpeg">
         <span class="pad_10">
             <h5>Sinistar</h5>
@@ -311,16 +310,13 @@
 
         <!-- RIGHT FOOTER/PLAY -->
         <div class="flex">
-
             <span class="marg_right_10">0:25</span>
-
             <div class="volume width_100 flex pad_6">
                 <div class="soundbar_white flex jstfy_content_end align_center ">
                     <div id="circle_bar" class=""></div>
                 </div>
                 <div class="soundbar_grey"></div>
             </div>
-
             <span class="marg_left_10">4:35</span>
 
         </div>
@@ -331,7 +327,6 @@
         <i class="fa-solid fa-list pad_6"></i>
         <i class="fas fa-desktop pad_6"></i>
         <i class="fas fa-volume-up pad_6"></i>
-
         <div class="volume width_100 flex pad_6">
             <div class="soundbar_white flex jstfy_content_end align_center ">
                 <div id="circle_bar" class=""></div>
@@ -339,11 +334,9 @@
 
             <div class="soundbar_grey"></div>
         </div>
-
     </section>
 
 </footer>
-
 
 </body>
 </html>
