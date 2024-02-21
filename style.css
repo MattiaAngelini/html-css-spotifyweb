@@ -132,6 +132,10 @@ body {
     font-size: 12px;
 }
 
+.font_sz_18 {
+    font-size: 18px;
+}
+
 .font_sz_20 {
     font-size: 20px;
 }
@@ -243,6 +247,10 @@ body {
 
 .pad_100{
     padding: 100px;
+}
+
+.pad_top_5 {
+    padding-top: 5px;
 }
 
 .pad_top_20 {
@@ -586,8 +594,30 @@ header .square:hover {
     transition: opacity 0.3s ease;
 }
 
+footer .fa-circle-play:hover {
+   color: green;
+   
+}
 
+footer i:hover {
+    color: white;
+}
 
+footer .soundbar_white:hover{
+    background-color: green;
+}
+
+#circle_bar {
+    display: none;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    clip-path: circle() 
+}
+
+footer .soundbar_white:hover #circle_bar{
+    display: block;
+}
 
 
 /*---------------------

@@ -276,60 +276,70 @@
     </div>
   
 <!--------------------- FOOTER - MEDIA STATION ----------------------->
-    <footer class="flex space_between background_dark_grey color_white">
+<footer class="flex space_between background_dark_grey color_white">
 
-       <!--LEFT FOOTER/SONG -->
-        <section class="song_card col_20 flex jstfy_content_cntr pad_20">
-            
-            <img class="" src="./img/sinister.jpeg"> 
-            <span class="pad_10">   
-                <h5>Sinistar</h5>
-                <h6>Brano nome</h6>
-            </span>
-            
-            <div class="flex align_center">
+    <!-- LEFT FOOTER/SONG -->
+    <section class="song_card col_20 flex jstfy_content_cntr pad_20">
+
+        <img class="" src="./img/sinister.jpeg">
+        <span class="pad_10">
+            <h5>Sinistar</h5>
+            <h6>Brano nome</h6>
+        </span>
+
+        <div class="flex align_center">
             <i class="fa-regular fa-heart pad_10 color_grey"></i>
             <i class="far fa-folder pad_10 color_grey"></i>
-            </div>
-            
-        </section>
+        </div>
 
-        <!--MIDDLE FOOTER/PLAY -->
-        <section class="play col_30 flex column jstfy_content_cntr">
+    </section>
 
-                <div class="flex jstfy_content_cntr">
-                    <i class="fa-solid fa-shuffle pad_10"></i>               
-                    <i class="fa-solid fa-forward-step pad_10"></i>
-                    <i class="fa-regular fa-circle-play marg_left_10 marg_right_10 font_sz_30"></i>              
-                    <i class="fa-solid fa-backward-step pad_10"></i>
-                    <i class="fa-solid fa-rotate-right pad_10"></i>
+    <!-- MIDDLE FOOTER/PLAY -->
+    <section class="play col_30 flex column jstfy_content_cntr">
+
+        <div class="flex jstfy_content_cntr">
+            <i class="fa-solid fa-shuffle pad_10"></i>
+            <i class="fa-solid fa-forward-step pad_10"></i>
+            <i id="play_btn" class="fa-regular fa-circle-play font_sz_24 marg_left_10 marg_right_10 pad_top_5"></i>
+            <i class="fa-solid fa-backward-step pad_10"></i>
+            <i class="fa-solid fa-rotate-right pad_10"></i>
+        </div>
+
+        <!-- RIGHT FOOTER/PLAY -->
+        <div class="flex">
+
+            <span class="">0:25</span>
+
+            <div class="volume width_100 flex pad_6">
+                <div class="soundbar_white flex jstfy_content_end align_center ">
+                    <div id="circle_bar" class=""></div>
                 </div>
-          
-            
-        <!--RIGHT FOOTER/PLAY -->   
-            <div class="flex">             
-                <div class=""> 0:25</div>                           
-                    <div class="volume width_100 flex pad_6"> 
-                        <div class="soundbar_white"></div>
-                        <div class="soundbar_grey"></div>
-                    </div>                         
-                <div class="">4:35</div>   
-            </div>
-
-        </section>
- 
-        <section class="settings flex col_20 pad_20 jstfy_content_cntr align_center">
-            <i class="fa-solid fa-list pad_6"></i>
-            <i class="fas fa-desktop pad_6"></i>
-            <i class="fas fa-volume-up pad_6"></i>
-           
-            <div class="volume width_50 flex pad_10"> 
-                <div class="soundbar_white"></div>
                 <div class="soundbar_grey"></div>
             </div>
-        </section>
 
-    </footer>
+            <span class="">4:35</span>
+
+        </div>
+
+    </section>
+
+    <section class="settings flex col_20 pad_20 jstfy_content_cntr align_center">
+        <i class="fa-solid fa-list pad_6"></i>
+        <i class="fas fa-desktop pad_6"></i>
+        <i class="fas fa-volume-up pad_6"></i>
+
+        <div class="volume width_100 flex pad_6">
+            <div class="soundbar_white flex jstfy_content_end align_center ">
+                <div id="circle_bar" class=""></div>
+            </div>
+
+            <div class="soundbar_grey"></div>
+        </div>
+
+    </section>
+
+</footer>
+
 
 </body>
 </html>
