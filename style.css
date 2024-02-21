@@ -632,6 +632,7 @@ header {
     height: calc(100vh - 90px); 
     top: 0;
     flex-shrink: 0; 
+    z-index: 1000;
 }
 
 main  {     
@@ -641,19 +642,21 @@ main  {
 }
 
 main .upgrade {
-    height: 70px;
-    z-index: 900;
+    height: 80px;
+    z-index: 800;
+   
 }
 
 footer {  
     height: 90px;   
-    z-index: 1000;
+    z-index: 900;
 }
    
 /*-------------------
     MEDIA QUERIES
 -------------------*/
 @media screen and (max-width: 1100px) {
+    
     .played .col_16 {
         width: 25%;
     }
@@ -686,12 +689,13 @@ footer {
     }
   
     header .playlist, .install {
-        display: none;
+        display: none;    
     }
 
     header .display_none {
         display: flex;
-        flex-direction: column;    
+        justify-content: space-between;
+        height: 100%;  
     }
 
     #overflow_mobile {
