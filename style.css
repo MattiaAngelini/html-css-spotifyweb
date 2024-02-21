@@ -576,7 +576,6 @@ header .square:hover {
 }
 
 .absolute {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -593,17 +592,20 @@ header .square:hover {
     opacity: 0.4;
     transition: opacity 0.3s ease;
 }
-
 footer .fa-circle-play:hover {
-   color: green;
-   
+    color: green;
 }
 
-footer i:hover {
+footer i:hover,
+footer #name_song:hover {
     color: white;
 }
 
-footer .soundbar_white:hover{
+footer #name_song:hover {
+    text-decoration: underline;
+}
+
+footer .soundbar_white:hover {
     background-color: green;
 }
 
@@ -612,10 +614,10 @@ footer .soundbar_white:hover{
     background-color: white;
     height: 10px;
     width: 10px;
-    clip-path: circle() 
+    clip-path: circle();
 }
 
-footer .soundbar_white:hover #circle_bar{
+footer .soundbar_white:hover #circle_bar {
     display: block;
 }
 
